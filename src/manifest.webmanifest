@@ -1,9 +1,9 @@
 {
   "name": "Platzi Store",
   "short_name": "Platzi Store",
-  "theme_color": "#ffffff",
-  "background_color": "#fafafa",
-  "display": "fullscreen",
+  "theme_color": "#3f51b5",
+  "background_color": "#3f51b5",
+  "display": "standalone",
   "scope": "./",
   "start_url": "./",
   "icons": [
