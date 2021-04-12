@@ -8,7 +8,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Page Admin
 
-Run `http://localhost:4200/auth/login` in browser. You can also use email: `eric@eric.com`, password: `123456`.
+Run `http://localhost:4200/admin` in browser. You can also use email: `eric@eric.com`, password: `123456`.
 
 ## Code scaffolding
 
