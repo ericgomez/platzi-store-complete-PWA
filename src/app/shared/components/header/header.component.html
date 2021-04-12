@@ -9,6 +9,7 @@
         <a mat-button routerLink="/contact" routerLinkActive="active"
           >Contact</a
         >
+      <button mat-button (click)="installByUser()" >Install App</button>
       </nav>
       <a routerLink="/order" mat-raised-button [matBadge]="total$ | async " matBadgeColor="warn">
         <mat-icon>shopping_cart</mat-icon>

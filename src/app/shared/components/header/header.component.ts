@@ -1,3 +1,4 @@
+import { HostListener } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 
@@ -13,6 +14,7 @@ import { CartService } from './../../../core/services/cart.service';
 export class HeaderComponent implements OnInit {
 
   total$: Observable<number>;
+  installEvent: any = null;
 
   constructor(
     private cartService: CartService
@@ -24,6 +26,27 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+
+  @HostListener('window:beforeinstallprompt', ['$event'])
+  onBeforeInstallPrompt(event: any) {
+    console.log(event);
+    // Prevent Chrome 67 and earlier from automatically showing the prompt
+    event.preventDefault();
+    // Stash the event so it can be triggered later.
+    this.installEvent = event;
+  }
+
+  installByUser() {
+    if (this.installEvent) {
+      // Show the prompt
+      this.installEvent.prompt();
+      // Wait for the user to respond to the prompt
+      this.installEvent.userChoice
+      .then((response: any) => {
+        console.log(response);
+      });
+    }
   }
 
 }
