@@ -1,4 +1,11 @@
-# PlatziStoreComplete implementando PWA
+# Clases del Curso de Progressive Web Apps (PWA) con Angular
+#### Proyecto del curso
+
+![proyect](https://static.platzi.com/media/landing-projects/Proyecto-pwa-angular.png)
+
+## Platzi Store
+
+El estudiante desarrollará Platzi Store como Aplicación Web Progresiva (PWA) empleando Angular.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.1.
 
